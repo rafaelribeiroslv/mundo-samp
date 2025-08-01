@@ -1,5 +1,7 @@
-# Firebase Studio
+# OiVerse
 
-This is a NextJS starter in Firebase Studio.
+A simple, interactive "Olá mundo" experience built with Next.js and Firebase Studio.
 
-To get started, take a look at src/app/page.tsx.
+This app allows you to customize the text's color and font size.
+
+To get started, take a look at `src/app/page.tsx`.
