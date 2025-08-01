@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title {
+    font-family: 'Orbitron', monospace;
+    font-size: 4rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, #ff6b35, #f7931e, #ffcc02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #00d4ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+    letter-spacing: 1px;
+}
+
+.news-text {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0 40px 0;
+    letter-spacing: 0.5px;
+    background: linear-gradient(
+        90deg,
+        #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, 
+        #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, 
+        #ff00ff, #ff0080, #ff0000
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbowWave 4s linear infinite;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes rainbowWave {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}
+
+.rainbow-letter {
+    display: inline-block;
+    animation: letterRainbow 2s linear infinite;
+    text-shadow: 0 0 10px currentColor;
+    margin-right: 2px;
+}
+
+@keyframes letterRainbow {
+    0% { color: #ff0000; }
+    14.28% { color: #ff8000; }
+    28.57% { color: #ffff00; }
+    42.86% { color: #80ff00; }
+    57.14% { color: #00ff00; }
+    71.43% { color: #00ff80; }
+    85.71% { color: #00ffff; }
+    100% { color: #0080ff; }
+}
+
+.navigation {
+    margin-bottom: 40px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: 2px solid #ff6b35;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navigation a:hover {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.4);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23333" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    padding: 80px 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 3px solid #ff6b35;
+    box-shadow: 0 0 40px rgba(255, 107, 53, 0.3);
+}
+
+.hero-text h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.play-button {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+}
+
+.play-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(0, 212, 255, 0.1));
+    border: 2px solid #00d4ff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #00d4ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #ff6b35;
+    margin-top: 50px;
+    color: #cccccc;
+}
+
+/* Efeitos de animação */
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(255, 107, 53, 0.5); }
+    50% { text-shadow: 0 0 30px rgba(255, 107, 53, 0.8); }
+}
+
+.title {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .navigation ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .navigation a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
